@@ -1,118 +1,145 @@
-<h1 align="center"><b>❤️ Neyork MUSIC BOT ❤️</b></h1>
+<img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
 
-<h4 align="center">Neyork Music Is A  Powerful, Smart And Simple Bot To Play Audio And Video Song In Telegram<br> ...All Credit Goes To Team Yukki...</h4>
+# Yukki Music Bot <img src="https://img.shields.io/github/v/release/TeamYukki/YukkiMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-<p align="center"><a href="https://t.me/iNeyork"><img src="https://telegra.ph/file/f4da0a2d75501b313e57e.jpg" width="400"></a></p>
+[Yukki Music Bot](https://github.com/TeamYukki/YukkiMusicBot) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
-<p align="center">
-    <a href="https://app.codacy.com/manual/Neyork/NeyorkV1/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/Neyork/NeyorkV1"> <img src="https://img.shields.io/github/repo-size/Neyork/NeyorkV1?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Neyork/NeyorkV1/commits/prince"> <img src="https://img.shields.io/github/last-commit/Neyork/NeyorkV1?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Neyork/NeyorkV1/issues"> <img src="https://img.shields.io/github/issues/Neyork/NeyorkV1?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Neyork/NeyorkV1/network/members"> <img src="https://img.shields.io/github/forks/Neyork/NeyorkV1?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-</p>
-
-> ⭐️ Thanks to everyone for using Alexa Server, That is the greatest pleasure we have !
-
-### Asad– History This Bot Is Clone On [Team Yukki](https://github.com/TeamYukki)
-
-<a href="https://www.youtube.com/JankariKiDuniya"><img src="https://img.shields.io/badge/Join-Subscribe%20Support-blue.svg?style=for-the-badge&logo=YouTube"></a>
-
-## Features ❤️”®
-
-- Gban Added By [Me](https://t.me/NeyorkUpdate)
-- Automatically Thambnail Generator By [Team Yukki](https://github.com/TeamYukki)
-- Customize Button Added [Me](https://t.me/NeyorkUpdate)
-- Channel Stream Added 
-
-# ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
+* Youtube, Soundcloud, Apple Music, Spotify, Resso and Telegram Audios & Videos support.
+* Written from scratch, making it stable and less crashes.
+* Attractive thumbnails, fonts and images,  making experience more user-friendly and interactive.
+* Loop, Seek, Shuffle, Specific Skip, Playlists etc support
+* Global, Users, Chats Top 10 played tracks stats
+* Multi-Language support
 
 
-<details>
-<summary><b>ʀᴇǫᴜɪʀᴇᴍᴇɴᴛs</b></summary>
-<br>
-    
-- [ᴘʏᴛʜᴏɴ𝟹.𝟿](https://www.python.org/downloads/release/python-390/)
-- [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘɪ ᴋᴇʏ](https://docs.pyrogram.org/intro/setup#api-keys)
-- [ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ](https://t.me/botfather)
-- [ᴍᴏɴɢᴏᴅʙ URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
-- [sᴛʀɪɴɢ sᴇssɪᴏɴ](https://t.me/StringGeneratorRobot)
-    
-</details>
+# 🔗 An Overview
 
-<details>
-<summary><b>sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
-<br>
-    
-> ʏᴏᴜ'ʟʟ ɴᴇᴇᴅ ᴀ ᴀᴘɪ_ɪᴅ & ᴀᴘɪ_ʜᴀsʜ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ sᴇssɪᴏɴ. 
-> ᴀʟᴡᴀʏs ʀᴇᴍᴇʙᴇʀ ᴛᴏ ᴜsᴇ ɢᴏᴏᴅ ᴀᴘɪ ᴄᴏᴍʙᴏ ᴇʟsᴇ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ᴄᴏᴜʟᴅ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ.
+Here's a brief high-level overview of the Yukki Music Bot:
 
-<h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ʀᴇᴘʟ: </h4>    
-<p><a href="https://replit.com/@AssadAli/String-Session-Generator"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
+This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls) . Pyrogram is a modern, elegant and asynchronous MTProto API framework.
 
-<h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
-<p><a href="https://t.me/Pyrogram_String_Bot"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
-    
-</details>
+* For database, Yukki uses the MongoDB to store data and keys. [MongoDB](https://www.mongodb.com/) is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+* Project uses the bs4 web scrapping for getting many platform details. [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) is a Python library for pulling data out of HTML and XML files.
+* The project uses the font [`Raleway`](../assets/font2.ttf) as its main font for the thumbnails.
+* The projects uses attractive images and icons which you can get in [assets](../assets/) directory.
 
-<details>
-<summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
-<br>
+For more information on the technologies that power the Yukki Music Bot, check out the [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/).
 
-> ʜᴇʀᴏᴋᴜ ʜᴀs ᴛᴡᴏ ᴠᴀʀs[ ʜᴇʀᴏᴋᴜ_ᴀᴘɪ_ᴋᴇʏ & ʜᴇʀᴏᴋᴜ_ᴀᴘᴘ_ɴᴀᴍᴇ ] ғᴏʀ ᴜᴘᴅᴀᴛᴇʀ ᴛᴏ ᴡᴏʀᴋ. 
-> ʙʏ sᴇᴛᴛɪɴɢ ᴛʜᴏsᴇ ᴛᴡᴏ ᴠᴀʀs ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʟᴏɢs ᴏғ ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴀᴘᴘ, sᴇᴛ ᴠᴀʀ, ᴇᴅɪᴛ ᴠᴀʀ, ᴅᴇʟᴇᴛᴇ ᴠᴀʀs , ᴄʜᴇᴄᴋ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇ ʙᴏᴛ. 
-> ᴛʜᴏsᴇ ᴛᴡᴏ ᴠᴀʀs ᴀʀᴇ ɴᴏᴛ ᴍᴀɴᴅᴀᴛᴏʀʏ, ʏᴏᴜ ᴄᴀɴ ʟᴇᴀᴠᴇ ᴛʜᴇᴍ ʙʟᴀɴᴋ ᴛᴏᴏ. 
-    
-<h4> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʏᴜᴋᴋɪ ᴏɴ ʜᴇʀᴏᴋᴜ</h4>    
+
+
+# ⚡️ Getting Started
+
+### Before deploying Yukki Music Bot , please have a look towards [all available config vars](../config/README.md) , also please check [all available commands](../strings/command.yml) of the project.
+
+> If you want to start working with Yukki Music Bot you can either fork or import repo .
+> The official [documentation site](https://notreallyshikhar.gitbook.io/yukkimusicbot/) contains a lot of information. The best place to start is from the deployment section.
+> If you'd like to talk to us, join us on our [Telegram Group](https://t.me/YukkiSupport)
+
+
+## 🖇 Prerequisites
+
+> In order to avoid conflicts in your project, you must have/installed
+
+- [Python3.9](https://www.python.org/downloads/release/python-390/)
+- [Telegram API Key](https://docs.pyrogram.org/intro/setup#api-keys)
+- [Telegram Bot Token](https://t.me/botfather)
+- [MongoDB URI](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
+- [Pyrogram String Session](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/string-session)
+
+
+## 🖇 Generating Pyrogram String Session
+
+- Generate a Pyrogram String Session via [Replit](https://replit.com/@NotReallyShikhar/Yukki-Music-String-Gen)
+
+- Generate a Pyrogram String Session via [Telegram String Generation Bot](https://t.me/YukkiStringBot)
+
+
+## 🚀 Heroku Deployment
+
+<h4>Click the button below to deploy Yukki on Heroku!</h4>    
 <p><a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FNeyork%2FNeyorkV1"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a></p>
-    
-</details>
+
+> Want detailed explanation of Heroku Deployment? [Click Here](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/heroku)
 
 
-# Owner And Credit
+## 🖇 VPS Deployment
+
+> Checkout [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/local-hosting-or-vps) for Detailed Explanation on VPS Deploy
 
 
-<details>
-<summary><b>ᴄʀᴇᴅɪᴛ</b></summary>
-<br>
+```console
+shikhar@MacBook~ $ git clone https://github.com/TeamYukki/YukkiMusicBot
+shikhar@MacBook~ $ cd YukkiMusicBot
+shikhar@MacBook~ $ sudo bash setup
+```
+> Setup will install each and every requirement, nodejs and pip packages automatically. After successfull installation of requirements , setup will ask you to input your vars.
+> Please input your vars correctly.
 
-## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
+```console
+shikhar@MacBook~ $ bash start
+```
 
-- [Neyork](https://t.me/iNeyork)
-- [Abhimanyu](https://t.me/Itz_Venom_xD)
-- [ʏᴜᴋᴋɪ](https://github.com/NotReallyShikhar)
-
-</details>
-
-<details>
-<summary><b>ʙʀᴏᴛʜᴇʀ</b></summary>
-<br>
-
-- [ᴍᴜᴋᴜ](https://t.me/LEGEND_MUKUND)
-- [ᴅᴇᴠɪʟ](https://t.me/its_devil_911)
-
-</details>
-
-<details>
-<summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
-<br>
-
-# ❤️ Support
-<a href="https://t.me/NeyorkSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://t.me/NeyorkSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="https://t.me/NeyorkUpdate"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
-<a href="https://t.me/NeyorkUpdate"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
-
-</details>
+> Not Getting VPS Method? [Watch Tutorial](https://t.me/TheYukki/2275)
 
 
-## ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇᴍᴇɴᴛs
+<img src="https://telegra.ph/file/6b75b57da50ef1183fcdc.jpg" align="center">
 
-sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ ᴛʜᴇsᴇ ᴀᴍᴀᴢɪɴɢ ᴘʀᴏᴊᴇᴄᴛs/ᴘᴇᴏᴘʟᴇ ᴡʜɪᴄʜ/ᴡʜᴏ ʜᴇʟᴘᴇᴅ ʜᴇʀᴏ ᴍᴜsɪᴄs ʙᴏᴛ:
+
+## 🏷 Support
+
+Reach out to the maintainer at one of the following places:
+
+- [GitHub Issues](https://github.com/TeamYukki/yukkimusicbot/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
+- Contact options listed on [this GitHub profile](https://github.com/TeamYukki)
+- [Telegram Support](https://t.me/YukkiSupport)
+
+## 🎗 Project assistance
+
+If you want to say **thank you** or/and support active development of YukkiMusicBot:
+
+- Add a [GitHub Star](https://github.com/TeamYukki/YukkiMusicBot) to the project.
+- Fork the Repo :)
+- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+
+PS: You can buy me a coffee too :)
+<p><a href="https://www.buymeacoffee.com/notreallysy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 35px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a></p>
+
+Together, we can make YukkiMusicBot **better**!
+
+## ✍🏻 Contributing
+
+First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
+
+Please read [our contribution guidelines](CONTRIBUTING.md), and thank you for being involved!
+
+## 👨🏻‍💻 Authors & contributors
+
+The original setup of this repository is by [Team Yukki](https://github.com/TeamYukki).
+
+For a full list of all authors and contributors, see [the contributors page](https://github.com/TeamYukki/YukkiMusicBot/contributors).
+
+## ⚠️ Security
+
+YukkiMusicBot follows good practices of security, but 100% security cannot be assured. YukkiMusicBot is provided **"as is"** without any **warranty**. Use at your own risk.
+
+For more information and to report security issues, please refer to our [`SECURITY.md`](SECURITY.md)
+
+
+## 🗂 License
+
+This project is licensed under the **GNU General Public License v3**. All designs were created by [@NotReallyShikhar](https://github.com/NotReallyShikhar) .
+
+See [LICENSE](../LICENSE) for more information.
+
+## 📑 Acknowledgements
+
+Special thanks to these amazing projects/people which/who help power Yukki Music Bot:
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
 - [CallsMusic Team](https://github.com/Callsmusic)
 - [TheHamkerCat](https://github.com/TheHamkerCat)
 - [Charon Baglari](https://github.com/XCBv021)
+
+
+Reminder that you are great, you are enough, and your presence is valued. If you are struggling with your mental health, please reach out to someone you love and consult a professional.
