@@ -17,11 +17,11 @@ from config import BANNED_USERS
 from strings import get_command, get_string, helpers
 from YukkiMusic import app
 from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils import help_pannel
+from YukkiMusic.utils import mhelp_pannel
 from YukkiMusic.utils.database import get_lang, is_commanddelete_on
 from YukkiMusic.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from YukkiMusic.utils.inline.help import (help_back_markup,
+from YukkiMusic.utils.inline.mhelp import (mhelp_back_markup,
                                           private_help_panel)
 
 ### Command
@@ -49,7 +49,7 @@ async def helper_private(
         chat_id = update.message.chat.id
         language = await get_lang(chat_id)
         _ = get_string(language)
-        keyboard = help_pannel(_, True)
+        keyboard = mhelp_pannel(_, True)
         if update.message.photo:
             await update.message.delete()
             await update.message.reply_text(
@@ -68,12 +68,12 @@ async def helper_private(
                 pass
         language = await get_lang(chat_id)
         _ = get_string(language)
-        keyboard = help_pannel(_)
+        keyboard = mhelp_pannel(_)
         await update.reply_text(_["mhelp_1"], reply_markup=keyboard)
 
 
 @app.on_message(
-    filters.command(HELP_COMMAND)
+    filters.command(MHELP_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
