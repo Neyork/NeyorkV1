@@ -1,14 +1,14 @@
 {
-    "name": "Neyork Music Bot ",
-    "description": "Made With Source Of Yukki Gban Added, Customize Button Added Play Audio And Video Song On Telegram Groups.",
+    "name": "Neyork Music Bot",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://telegra.ph/file/f4da0a2d75501b313e57e.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Alexa",
-    "neyorkmusicbot",
-    "neyorkmusicbot",
+    "Neyork",
+    "NeyorkMusicBot",
+    "telegram-bot",
     "pyrogram"
     ],
     "stack": "container",
@@ -34,9 +34,9 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Mongo DB URL",
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
         "value": "",
-        "required": true
+        "required": false
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
@@ -68,28 +68,13 @@
         "value": "",
         "required": true
       },
-        "SUPPORT_GROUP": {
-            "description": "if you have group, then fill group link",
-            "required": true,
-            "value": "https://t.me/NeyorkSupport"
-        },
-        "SUPPORT_CHANNEL": {
-            "description": "if you have channel, then fill the channel link",
-            "required": true,
-            "value": "https://t.me/NeyorkUpdate"
-        },
-        "START_IMG_URL": {
-            "description": "fill with your telegram account username without @",
-            "required": true,
-            "value": "https://telegra.ph/file/d8db78924684b505c3048.jpg"
-        },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Neyork/NeyorkV1",
+        "value": "https://github.com/TeamYukki/YukkiMusicBot",
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Repo's Branch Name",
+        "description": "Upstream Repo's Branch Name",
         "value": "master",
         "required": true
       }
