@@ -1,14 +1,14 @@
 {
-    "name": "Neyork Music Bot",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/fadbdd254a28f1f61a8ed.jpg",
+    "name": "Neyork Music Bot ",
+    "description": "Made With Source Of Yukki Gban Added, Customize Button Added Play Audio And Video Song On Telegram Groups.",
+    "logo": "https://telegra.ph/file/f4da0a2d75501b313e57e.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Neyork",
-    "NeyorkMusicBot",
-    "telegram-bot",
+    "Alexa",
+    "neyorkmusicbot",
+    "neyorkmusicbot",
     "pyrogram"
     ],
     "stack": "container",
@@ -68,9 +68,24 @@
         "value": "",
         "required": true
       },
+        "SUPPORT_GROUP": {
+            "description": "if you have group, then fill group link",
+            "required": true,
+            "value": "https://t.me/NeyorkSupport"
+        },
+        "SUPPORT_CHANNEL": {
+            "description": "if you have channel, then fill the channel link",
+            "required": true,
+            "value": "https://t.me/NeyorkUpdate"
+        },
+        "START_IMG_URL": {
+            "description": "fill with your telegram account username without @",
+            "required": true,
+            "value": "https://telegra.ph/file/d8db78924684b505c3048.jpg"
+        },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamYukki/YukkiMusicBot",
+        "value": "https://github.com/Neyork/NeyorkV1",
         "required": true
       },
       "UPSTREAM_BRANCH": {
