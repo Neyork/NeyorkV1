@@ -66,17 +66,18 @@ admin_26 : "ලූප් වාදනය සඳහා කරුණාකර 1-10
 admin_27 : "Loop Play අබල කර ඇත"
 
 # Bot 
-# mStart
-mstart_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
-mstart_2 : "Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups."
-mstart_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
-mstart_4 : "{0}'s Owner[{1}] has just joined your chat."
-mstart_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
-mstart_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** to **supergroup** and then add me back.\n\n**How to make supergroup?**\n✅ Make your group's chat history **visible** once."
+# Start
+start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
+start_2 : "Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups."
+start_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
+start_4 : "{0}'s Owner[{1}] has just joined your chat."
+start_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
+start_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** to **supergroup** and then add me back.\n\n**How to make supergroup?**\n✅ Make your group's chat history **visible** once."
+start_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
 
 # Help
-mhelp_1 : "වැඩි විස්තර සඳහා පහත බොත්තම් ක්ලික් කරන්න.\n\nසියලු විධානයන් සමඟ භාවිතා කළ හැක: /"
-mhelp_2 : "උදව් සඳහා PM වලින් මාව සම්බන්ධ කරගන්න."
+help_1 : "වැඩි විස්තර සඳහා පහත බොත්තම් ක්ලික් කරන්න.\n\nසියලු විධානයන් සමඟ භාවිතා කළ හැක: /"
+help_2 : "උදව් සඳහා PM වලින් මාව සම්බන්ධ කරගන්න."
 
 # Settings
 setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group:** {0}\n🔖**Group ID:** `{1}`\n\n💡**Choose the function buttons from below which you want to edit or change.**"
@@ -101,23 +102,20 @@ set_cb_7 : "සත්‍යාපන පරිශීලක ලැයිස්ත
 set_cb_8 : "ආපසු ලබා ගැනීම.."
 
 # Misc
-gstats_1 : "ගෝලීය සංඛ්‍යාලේඛන ලබා ගැනීම, මෙයට යම් කාලයක් ගත විය හැක..."
-gstats_2 : "ගෝලීය සංඛ්‍යාලේඛන හමු නොවිණි."
-gstats_3 : "**බොට් හි සම්පූර්ණ විමසුම්:** {0}\n\n{1} මේ දක්වා **{3}** වාර ගණනකින් **{2}** පීලි වාදනය කර ඇත.\n\n* *ඉහළ {4} ඛණ්ඩ:**\n"
+ustats_1 : "No User Stats Found."
+ustats_2 : "Grettings!, You have played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by you:\n\n"
 
-ustats_1 : "පරිශීලක සංඛ්‍යාලේඛන හමු නොවිණි."
-ustats_2 : "සුභ පැතුම්!, ඔබ මේ දක්වා **{0}** ධාවන පථ විශාල වශයෙන් **{1}** වාර ගණනකින් වාදනය කර ඇත.\n\nඔබ විසින් වාදනය කරන ලද ඉහළම {2}:\n\n"
-
-tops_1 : "බොට් හි ගෝලීය හොඳම කතාබස් 10 ලබා ගැනීම, මෙයට යම් කාලයක් ගත විය හැක..."
-tops_2 : "සංඛ්‍යාලේඛන හමු නොවිණි"
-tops_3 : "** {1} හි ඉහළම {0} කතාබස්:**\n\n"
-tops_4 : "බොට් හි ගෝලීය හොඳම පරිශීලකයින් 10 ලබා ගැනීම, මෙයට යම් කාලයක් ගත විය හැකිය..."
-tops_5 : "**{1} හි ඉහළම {0} පරිශීලකයින්:**\n\n"
-tops_6 : "මෙම කතාබස් වල හොඳම ඛණ්ඩ 10 ලබා ගැනීම, මෙයට යම් කාලයක් ගත විය හැක..."
-tops_7 : "බොට් හි ගෝලීය හොඳම පීලි 10 ලබා ගැනීම, මෙයට යම් කාලයක් ගත විය හැකිය..."
-tops_8 : "මෙම කතාබස් කණ්ඩායම මේ දක්වා **{0}** ධාවන පථ විශාල වශයෙන් **{1}** වාර ගණනකින් වාදනය කර ඇත.\n\nමෙම කතාබස් කණ්ඩායම විසින් වාදනය කරන ලද ඉහළම {2}:\n\n"
-tops_9 : "බොට්ගේ සාමාන්‍ය සංඛ්‍යාලේඛන සහ විස්තර ලබා ගැනීම.. මෙයට යම් කාලයක් ගත විය හැක..."
-tops_10 : "**BOT හි ගෝලීය ඉහළම සංඛ්‍යාලේඛන 10**\n\nඔබට බොට්ගේ සේවාදායක වෙතින් ගෝලීය සංඛ්‍යාලේඛන පරීක්ෂා කිරීමට අවශ්‍ය පහත බොත්තම් තෝරන්න."
+gstats_1 : "Getting Global Stats, This could take some time..."
+gstats_2 : "No Stats Found."
+gstats_3 : "Getting Global Top 10 {0} on the bot, This could take some time.."
+gstats_4 : "**Total Queries on Bot:** {0}\n\n{1} has played **{2}** tracks till now with a whopping count of **{3}** times.\n\n**Top {4} Tracks:**\n"
+gstats_5 : "**Top {0} Chats of {1}:**\n\n"
+gstats_6 : "**Top {0} Users of {1}:**\n\n"
+gstats_7 : "This chat group has played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by this chat group:\n\n"
+gstats_8 : "Getting Bot's general stats and information.. This could take some time..."
+gstats_9 : "**GLOBAL TOP 10 STATS OF THE BOT**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
+gstats_10 : "**Global Stats of {0}**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
+gstats_11 : "**General Stats of {0}**\nSelect the buttons from below for which you want to check global stats from bot's servers.\n\nTo check top tracks, chats, users and other stuffs, please use /gstats"
 
 
 # Play 
@@ -150,6 +148,9 @@ play_13 : "**Apple Playlists**\n\nඉල්ලන ලද්දේ:- {0}"
 play_14 : "**URL එක සත්‍යාපනය කළ නොහැක.**\nමෙම url එක පහත සඳහන් ඕනෑම වේදිකාවකට අයත් වේද යන්න පුදුමයට කරුණකි: Youtube, AppleMusic, Spotify, Resso සහ Soundcloud.\n\nඔබට M3u8 හෝ දුරස්ථ සබැඳි සඳහා /stream භාවිතා කළ හැක."
 play_15 : "**සජීවී ප්‍රවාහය අනාවරණය කර ඇත**\nපද්ධති මඟින් ඔබේ ධාවන සබැඳිය සජීවී ප්‍රවාහයක් ලෙස හඳුනාගෙන ඇත. සජීවී ප්‍රවාහය ක්‍රීඩා කිරීමට අවශ්‍යද?"
 play_16 : "ඛණ්ඩ විස්තර ලබා ගැනීමට අසමත් විය. වෙනත් ඕනෑම සෙල්ලම් කිරීමට උත්සාහ කරන්න."
+play_17 : "Unable to play this type of spotify query!\n\nI can only play spotify tracks, albums, artists and playlists"
+play_18 : "**No Active Voice Chat Found**\n\nTo use force play, there must be an active voice chat going on in your group. **Force Play** stops the playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue."
+
 
 
 #Playlist
@@ -183,7 +184,7 @@ str_2 : "✅ වලංගු ප්‍රවාහය සත්‍යාපන�
 str_3 : "youtube සජීවී ප්‍රවාහ ප්‍රවාහ කිරීමට නොහැක. සජීවී ආකෘතියක් හමු නොවිණි"
 
 #TopPlay
-tracks_1 : "**Processing {0} Top 10 Playlist**\n\n**👤ඉල්ලන ලද්දේ:** {1}\n📢**නාලිකා ප්ලේ:** {2}\n\n /stats විසින් Top tracks 10 පරීක්ෂා කරන්න "
+tracks_1 : "**Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By:** {1}\n\nCheck Top 10 tracks by /stats"
 tracks_2 : "**දෝෂය**\n\nඑහෙම නෑ**{0} ඉහළම ධාවන ලැයිස්තුව 10** bot ගේ සේවාදායකයන් මත. කරුණාකර වෙනත් ධාවන ලැයිස්තුවක් උත්සාහ කරන්න"
 
 
@@ -198,7 +199,6 @@ lyrics_4 : "පහත බොත්තම මත ක්ලික් කර දි
 
 #Ping
 ping_1 : "පොං!!!!"
-ping_2 : "**පොං!**\n`⚡{0} ms`\n\n<b><u>{1}පද්ධති සංඛ්‍යාලේඛන:</u></b>\nඅතිකාල : {2} \nRAM: {3} \nCpu : {4} \nDisk : {5}"
 
 # Song
 song_1 : "ඔබට යූ ටියුබ් වෙතින් සංගීතය හෝ වීඩියෝ බාගත කළ හැක්කේ පුද්ගලික කතාබස් වලදී පමණි. කරුණාකර මාව පුද්ගලික කතාබස් වලින් ආරම්භ කරන්න."
@@ -252,6 +252,7 @@ H_B_2 : "වාදන විධාන"
 H_B_3 : "බොට් විධාන"
 H_B_4 : "අමතර විධාන"
 H_B_5 : "මෙනුව වසන්න"
+H_B_6 : "SudoUser Commands"
 
 #PlayMode
 PM_B_1 : "සෘජුව වාදනය"
@@ -299,7 +300,7 @@ ST_B_18 : "📋 බලයලත් පරිශීලක ලැයිස්ත�
 ST_B_19 : "🔎 සෙවුම් මාදිලිය"
 ST_B_20 : "✅ සෘජු"
 ST_B_21 : "✅ පෙළට"
-ST_B_22 : "⏯ Play Mode"
+ST_B_22 : "👨‍⚖️ Admin Commands"
 ST_B_23 : "🏘 සමූහය"
 ST_B_24 : "🏷 නාලිකාව"
 ST_B_25 : "🫂 Play වර්ගය"
@@ -377,14 +378,10 @@ vidmode_3 : "වීඩියෝ ප්ලේ මාදිලිය m3u8 ලෙ�
 broad_1 : "**Bot වෙතින් පින් {1}ක් සමඟ {0} කතාබස් තුළ විකාශනය කළ පණිවිඩය.**"
 broad_2 : "Assistent Broadcast ආරම්භ කරන ලදී..."
 broad_3 : "**Assistant Broadcast:**\n\n"
-broad_4 : "Assistant 1 කතාබස් {0} ක් තුළ Broadcast කරන ලදී\n"
-broad_5 : "Assistant 2 කතාබස් {0} ක් තුළ Broadcast කරන ලදී\n"
-broad_6 : "Assistant 3 කතාබස් {0} ක් තුළ Broadcast කරන ලදී\n"
-broad_7 : "Assistant 4 කතාබස් {0} ක් තුළ Broadcast කරන ලදී\n"
-broad_8 : "Assistant 5 කතාබස් {0} ක් තුළ Broadcast කරන ලදී\n"
-broad_9 : "**භාවිතය**:\n/broadcast [MESSAGE] or [Reply to a Message]"
-broad_10 : "කරුණාකර විකාශනය කිරීමට පෙළ කිහිපයක් ලබා දෙන්න."
-broad_11 : "** {0} පරිශීලකයන් වෙත පණිවිඩය Broadcast කරන ලදි.**"
+broad_4 : "Assistant {0} Broadcasted in {1} chats\n"
+broad_5 : "**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]"
+broad_6 : "Please provide some text to broadcast."
+broad_7 : "**Broadcasted Message to {0} Users.**"
 
 #Heroku
 heroku_1 : "කරුණාකර ඔබගේ Heroku API key, ඔබගේ යෙදුමේ නම heroku හි නිවැරදිව වින්‍යාස කර ඇති බවට වග බලා ගන්න"
@@ -417,3 +414,16 @@ pbot_10 : "පුද්ගලික කතාබස්"
 pbot_11 : "අවසර ලත් කතාබස් හමු නොවීය"
 pbot_12 : "පුද්ගලික බොට් ප්‍රකාරය අබල කර ඇත.\ සහ\nඔබේ බොට් පුද්ගලික බොට් ලෙස භාවිතා නොකරන්න **PRIVATE_BOT_MODE** = **True** සැකසීමට වග බලා ගන්න"
 pbot_13 : "\n**<b>ලබා නොගත් කතාබස්:</b>**\n\n"
+
+#Gbanned
+gban_1 : "You want to gban yourself? How Fool!"
+gban_2 : "Should i block myself? Lol"
+gban_3 : "You want to block a sudo user?"
+gban_4 : "{0} is already **gbanned** from the bot."
+gban_5 : "**Initializing Gobal Ban on {0}**\n\nExpected Time : {1}."
+gban_6 : "**Gbanned Successfully**\n\nBanned **{0}** from **{1}** chats."
+gban_7 : "{0} is not **gbanned **yet from the bot."
+gban_8 : "**Ungbanning {0}**\n\nExpected Time : {1}."
+gban_9 : "**UnGbanned Successfully**\n\nUnbanned **{0}** in **{1}** chats."
+gban_10 : "No Gbanned Users Found."
+gban_11 : "Please wait a while.. Fetching Gbanned users list"
