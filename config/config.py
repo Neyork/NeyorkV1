@@ -1,11 +1,12 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
+# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
+
+# Kanged By © @iNeyork
+# Rocks © @NeyorkSupport
+# Owner Neyork 
+# Neyork
+# All rights reserved. Yukki
 
 import re
 import sys
@@ -28,12 +29,12 @@ MONGO_DB_URI = getenv("MONGO_DB_URI")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "900")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "900")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -56,7 +57,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/NotReallyShikhar/YukkiMusicBot",
+    "https://github.com/Neyork/NeyorkV1",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -191,21 +192,6 @@ SOUNCLOUD_IMG_URL = getenv(
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
     "assets/Youtube.jpeg",
-)
-
-SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL",
-    "assets/SpotifyArtist.jpeg",
-)
-
-SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL",
-    "assets/SpotifyAlbum.jpeg",
-)
-
-SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL",
-    "assets/SpotifyPlaylist.jpeg",
 )
 
 
