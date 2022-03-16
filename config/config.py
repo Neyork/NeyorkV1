@@ -1,12 +1,11 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @iNeyork
-# Rocks © @NeyorkSupport
-# Owner Neyork 
-# Neyork
-# All rights reserved. Yukki
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
 
 import re
 import sys
@@ -25,16 +24,16 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "900")
+    getenv("DURATION_LIMIT", "60")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "900")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -57,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Neyork/NeyorkV1",
+    "https://github.com/NotReallyShikhar/YukkiMusicBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -78,6 +77,11 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
+)  # Remember to give value in Seconds
+
+# Time after which bot will suggest random chats about bot commands.
+AUTO_SUGGESTION_TIME = int(
+    getenv("AUTO_SUGGESTION_TIME", "5400")
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
@@ -115,6 +119,20 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 CLEANMODE_DELETE_MINS = int(
     getenv("CLEANMODE_MINS", "5")
 )  # Remember to give value in Seconds
+
+
+# Telegram audio  and video file size limit
+
+TG_AUDIO_FILESIZE_LIMIT = int(
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600")
+)  # Remember to give value in bytes
+
+TG_VIDEO_FILESIZE_LIMIT = int(
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824")
+)  # Remember to give value in bytes
+
+# Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
+
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", None)
@@ -192,6 +210,21 @@ SOUNCLOUD_IMG_URL = getenv(
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
     "assets/Youtube.jpeg",
+)
+
+SPOTIFY_ARTIST_IMG_URL = getenv(
+    "SPOTIFY_ARTIST_IMG_URL",
+    "assets/SpotifyArtist.jpeg",
+)
+
+SPOTIFY_ALBUM_IMG_URL = getenv(
+    "SPOTIFY_ALBUM_IMG_URL",
+    "assets/SpotifyAlbum.jpeg",
+)
+
+SPOTIFY_PLAYLIST_IMG_URL = getenv(
+    "SPOTIFY_PLAYLIST_IMG_URL",
+    "assets/SpotifyPlaylist.jpeg",
 )
 
 
@@ -313,3 +346,10 @@ if TELEGRAM_VIDEO_URL:
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
             )
             sys.exit()
+
+
+if not MUSIC_BOT_NAME.isascii():
+    print(
+        "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
+    )
+    sys.exit()

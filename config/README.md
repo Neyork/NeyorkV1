@@ -1,16 +1,17 @@
-# Neyork Music Bot Configs
+# Yukki Music Bot Configs
 
 Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
+### Get to know about all these vars in depth from our Docs. [Read Now from Here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/available-vars)
 
 ## Mandatory Vars
 
-- These are the minimum required vars need to setup to make Neyork Music Bot functional.
+- These are the minimum required vars need to setup to make Yukki Music Bot functional.
 
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
 3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
-4. `MONGO_DB_URI` : Get mongo db [from HERE](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
+4. `MONGO_DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
@@ -30,6 +31,14 @@ Config vars are basically the variables which configure or modify bot to functio
 7. `SUPPORT_CHANNEL` : If you've any channel for your music bot , fill it with your channel link
 8. `SUPPORT_GROUP` : If you've any group support for your music bot , fill it with your channel link
 
+## Play FileSize Limit Vars
+
+- Maximum File size limit for the audio and videos that a user can play from your bot. [Only Bytes Size Accepted]
+> You can convert mb into bytes from https://www.gbmb.org/mb-to-bytes and use it here 
+
+1. `TG_AUDIO_FILESIZE_LIMIT` : Maximum file size limit for audio files which can be streamed over vc. Defaults to 104857600 bytes, i.e. 100MB
+2. `TG_VIDEO_FILESIZE_LIMIT` : Maximum file size limit for video files which can be played. Defaults to 1073741824 bytes, i.e. 1024MB or 1GB
+
 
 ## Bot Vars
 
@@ -39,15 +48,18 @@ Config vars are basically the variables which configure or modify bot to functio
 2. `YOUTUBE_EDIT_SLEEP` : Time sleep duration For Youtube Downloader. Default to 3 seconds
 3. `TELEGRAM_EDIT_SLEEP` : Time sleep duration For Telegram Downloader. Default to 5 seconds
 4. `AUTO_LEAVING_ASSISTANT` : Set it in True if you want to leave your assistant after a certain amount of time.
-5. `ASSISTANT_LEAVE_TIME` : Time after which your assistant account will leave served chats automatically. Default to 5400 min, i.e 90 Mins
+5. `ASSISTANT_LEAVE_TIME` : Time after which your assistant account will leave served chats automatically. Default to 5400 seconds, i.e 90 Mins
 6. `AUTO_DOWNLOADS_CLEAR` : Set it True if you want to delete downloads after the music playout ends. 
 7. `AUTO_SUGGESTION_MODE` : Set it True if you want to bot to suggest about bot commands to random chats of your bots. 
-
+9. `AUTO_SUGGESTION_TIME` : Time after which your bot will suggest random 1/10 chats of your served chats about bot commands. Default to 5400 seconds, i.e 90 Mins
 
 ## Spotify Vars
 
 - You can play tracks or playlists from spotify from Yukki Music bot
 - You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
+
+### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/spotify)
+
 
 1. `SPOTIFY_CLIENT_ID` : Get it from https://developer.spotify.com/dashboard 
 2. `SPOTIFY_CLIENT_SECRET` : Get it from https://developer.spotify.com/dashboard 
@@ -57,6 +69,8 @@ Config vars are basically the variables which configure or modify bot to functio
 
 - To work some Heroku compatible modules, this var value required to Access your account to use `get_log`, `usage`, `update` etc etc commands.
 - You can fill this var using your API key or Authorization token.
+
+### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/heroku-vars)
 
 1. `HEROKU_API_KEY` : Get it from http://dashboard.heroku.com/account 
 2. `HEROKU_APP_NAME` : You have to Enter the app name which you gave to identify your Music Bot in Heroku. 
@@ -88,7 +102,9 @@ Config vars are basically the variables which configure or modify bot to functio
 8. `STREAM_IMG_URL` : his image comes when someone plays m3u8 or index links.
 9. `SOUNCLOUD_IMG_URL` : This image comes when someone plays music from soundcloud. 
 10. `YOUTUBE_IMG_URL` : This image comes if thumbnail generator fails to gen thumb anyhow.
-
+11. `SPOTIFY_ARTIST_IMG_URL` : This image comes when someone plays Spotify artist via link in inline mode. 
+12. `SPOTIFY_ALBUM_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
+13. `SPOTIFY_PLAYLIST_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
 
 ## Multi Assistant Mode
 
