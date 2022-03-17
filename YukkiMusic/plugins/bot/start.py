@@ -29,8 +29,8 @@ from YukkiMusic.utils.database import (add_served_chat,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
 from YukkiMusic.utils.decorators.language import LanguageStart
-from YukkiMusic.utils.inline import (help_pannel, private_panel,
-                                     start_pannel)
+from YukkiMusic.utils.inline import (mhelp_pannel, private_panel,
+                                     mstart_pannel)
 
 loop = asyncio.get_running_loop()
 
@@ -42,12 +42,12 @@ loop = asyncio.get_running_loop()
     & ~BANNED_USERS
 )
 @LanguageStart
-async def start_comm(client, message: Message, _):
+async def mstart_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "mhelp":
-            keyboard = help_pannel(_)
+            keyboard = mhelp_pannel(_)
             return await message.reply_text(
                 _["mhelp_1"], reply_markup=keyboard
             )
@@ -193,10 +193,10 @@ async def start_comm(client, message: Message, _):
         except:
             OWNER = None
         out = private_panel(_, app.username, OWNER)
-        if config.START_IMG_URL:
+        if config.MSTART_IMG_URL:
             try:
                 await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                    photo=config.MSTART_IMG_URL,
                     caption=_["mstart_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
@@ -229,7 +229,7 @@ async def start_comm(client, message: Message, _):
 )
 @LanguageStart
 async def testbot(client, message: Message, _):
-    out = start_pannel(_)
+    out = mstart_pannel(_)
     return await message.reply_text(
         _["mstart_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
@@ -269,7 +269,7 @@ async def welcome(client, message: Message):
                     )
                     return await app.leave_chat(chat_id)
                 userbot = await get_assistant(message.chat.id)
-                out = start_pannel(_)
+                out = mstart_pannel(_)
                 await message.reply_text(
                     _["mstart_3"].format(
                         config.MUSIC_BOT_NAME,

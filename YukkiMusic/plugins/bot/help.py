@@ -78,8 +78,8 @@ async def helper_private(
     & ~filters.edited
     & ~BANNED_USERS
 )
-@LanguageStart
-async def help_com_group(client, message: Message, _):
+@LanguagemStart
+async def mhelp_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
     await message.reply_text(
         _["mhelp_2"], reply_markup=InlineKeyboardMarkup(keyboard)
