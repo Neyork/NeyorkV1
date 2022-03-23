@@ -29,33 +29,33 @@ def mhelp_pannel(_, MSTART: Union[bool, int] = None):
             text=_["CLOSEMENU_BUTTON"], callback_data=f"close"
         ),
     ]
-    mark = second if START else first
+    mark = second if MSTART else first
     upl = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
                     text=_["MH_B_1"],
-                    callback_data="mhelp_callback hb1",
+                    callback_data="mhelp_callback mhb1",
                 ),
                 InlineKeyboardButton(
                     text=_["MH_B_2"],
-                    callback_data="mhelp_callback hb2",
+                    callback_data="mhelp_callback mhb2",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text=_["MH_B_3"],
-                    callback_data="mhelp_callback hb3",
+                    callback_data="mhelp_callback mhb3",
                 ),
                 InlineKeyboardButton(
                     text=_["MH_B_4"],
-                    callback_data="mhelp_callback hb4",
+                    callback_data="mhelp_callback mhb4",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text=_["MH_B_6"],
-                    callback_data="mhelp_callback hb5",
+                    callback_data="mhelp_callback mhb5",
                 ),
             ],
             mark,
@@ -70,7 +70,7 @@ def mhelp_back_markup(_):
             [
                 InlineKeyboardButton(
                     text=_["BACK_BUTTON"],
-                    callback_data=f"settings_back_helper",
+                    callback_data=f"settings_back_mhelper",
                 ),
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"], callback_data=f"close"
@@ -86,7 +86,7 @@ def private_mhelp_panel(_):
         [
             InlineKeyboardButton(
                 text=_["MS_B_1"],
-                url=f"https://t.me/{app.username}?start=mhelp",
+                url=f"https://t.me/{app.username}?mstart=mhelp",
             ),
         ],
     ]
