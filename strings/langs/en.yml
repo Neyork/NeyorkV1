@@ -74,17 +74,11 @@ admin_34 : "Failed to seek the current stream."
 # Bot 
 
 # mStart
-mstart_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
 mstart_2 : "*Hello Sir {} !*
 âœª My name is Neyork I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 Ã— *Uptime:* {}
 Ã— {} *users, across* {} *chats.*
 âœª"
-mstart_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
-mstart_4 : "{0}'s Owner[{1}] has just joined your chat."
-mstart_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
-mstart_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** to **supergroup** and then add me back.\n\n**How to make supergroup?**\n✅ Make your group's chat history **visible** once."
-mstart_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
 
 # mHelp
 mhelp_1 : "Click on the buttons below for more information. If you're facing any problem in command you can contact my bot owner or ask in support chat.\n\nAll commands can be used with: /"
@@ -248,22 +242,21 @@ UNBAN_BUTTON : "🗑 Unban Assistant"
 L_B_1 : "🚀 Checkout Lyrics Now"
 
 # mStart
-S_B_1 : "🗒 Commands"
-S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
-S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_1 : "Commands 🖤"
+S_B_2 : "Settings ⚙"
+S_B_3 : "Neyork Support"
+S_B_4 : "Neyork Update"
+S_B_5 : "Add me to your Chat!"
+S_B_7 : "Neyork �"
+S_B_8 : "Commands List ♡."
 
 #mHelp 
-MH_B_1 : "Admin Commands"
-MH_B_2 : "Play Commands"
-MH_B_3 : "Bot Commands"
-MH_B_4 : "Extra Commands"
-MH_B_5 : "Close Menu"
-MH_B_6 : "SudoUser Commands"
+MH_B_1 : "AdminS 👮‍♀"
+MH_B_2 : "Play Commands 🎸"
+MH_B_3 : "Bot Commands 🤖"
+MH_B_4 : "Extra Commands ✨"
+MH_B_5 : "Close ✗"
+MH_B_6 : "Sudo 👷"
 
 #PlayMode
 PM_B_1 : "DirectPlay"
