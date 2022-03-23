@@ -7,10 +7,10 @@
 #
 # All rights reserved.
 
-from .mhelp import *
-from .play import *
-from .playlist import *
-from .queue import *
-from .settings import *
-from .song import *
-from .mstart import *
+from mhelp import *
+from play import *
+from playlist import *
+from queue import *
+from settings import *
+from song import *
+from mstart import *

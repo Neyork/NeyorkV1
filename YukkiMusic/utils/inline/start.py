@@ -15,12 +15,12 @@ from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 
 
-def start_pannel(_):
+def mstart_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
                 text=_["MS_B_1"],
-                url=f"https://t.me/{app.username}?start=mhelp",
+                url=f"https://t.me/{app.username}?mstart=mhelp",
             ),
             InlineKeyboardButton(
                 text=_["MS_B_2"], callback_data="settings_helper"
@@ -98,7 +98,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text=_["MS_B_5"],
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{BOT_USERNAME}?mstartgroup=true",
             )
         ]
     )
