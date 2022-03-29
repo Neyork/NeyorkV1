@@ -29,27 +29,21 @@ from YukkiMusic.utils.database import (add_served_chat,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
 from YukkiMusic.utils.decorators.language import LanguageStart
-from YukkiMusic.utils.inline import (mhelp_pannel, private_panel,
-                                     mstart_pannel)
+from YukkiMusic.utils.inline import (help_pannel, private_panel,
+                                     start_pannel)
 
 loop = asyncio.get_running_loop()
 
 
-@app.on_message(
-    filters.command(get_command("MSTART_COMMAND"))
-    & filters.private
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@LanguageStart
-async def mstart_comm(client, message: Message, _):
+@app.on_message(filters.command("start") & filters.private)
+async def start_command(_, message):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
-        if name[0:4] == "mhelp":
-            keyboard = mhelp_pannel(_)
+        if name[0:4] == "help":
+            keyboard = help_pannel(_)
             return await message.reply_text(
-                _["mhelp_1"], reply_markup=keyboard
+                _["help_1"], reply_markup=keyboard
             )
         if name[0:4] == "song":
             return await message.reply_text(_["song_2"])
@@ -91,9 +85,9 @@ async def mstart_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram)  played {count} times\n\n"
                     else:
-                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid})  played {count} times\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
                 return videoid, msg
 
@@ -115,7 +109,7 @@ async def mstart_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} has just started bot to check <code>SUDOLIST</code>\n\nUSER ID: {sender_id}\nUSER NAME: {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -133,7 +127,7 @@ async def mstart_comm(client, message: Message, _):
         if name[0:3] == "inf":
             m = await message.reply_text("🔎 Fetching Info!")
             query = (str(name)).replace("info_", "", 1)
-            query = f"https://www.youtube.com/watch?v={query}"
+query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
             for result in (await results.next())["result"]:
                 title = result["title"]
@@ -147,18 +141,15 @@ async def mstart_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
-
-❇️**Title:** {title}
-
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
-
-⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
+🔍Video Track Information
+❇️Title: {title}
+⏳Duration: {duration} Mins
+👀Views: {views}
+⏰Published Time: {published}
+🎥Channel Name: {channel}
+📎Channel Link: [Visit From Here]({channellink})
+🔗Video Link: [Link]({link})
+⚡️ Searched Powered By {config.MUSIC_BOT_NAME}"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -184,7 +175,7 @@ async def mstart_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\nUSER ID: {sender_id}\nUSER NAME: {sender_name}",
                 )
     else:
         try:
@@ -193,23 +184,23 @@ async def mstart_comm(client, message: Message, _):
         except:
             OWNER = None
         out = private_panel(_, app.username, OWNER)
-        if config.MSTART_IMG_URL:
+        if config.START_IMG_URL:
             try:
                 await message.reply_photo(
-                    photo=config.MSTART_IMG_URL,
-                    caption=_["mstart_2"].format(
+                    photo=config.START_IMG_URL,
+                    caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
                 await message.reply_text(
-                    _["mstart_2"].format(config.MUSIC_BOT_NAME),
+                    _["start_2"].format(config.MUSIC_BOT_NAME),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
         else:
             await message.reply_text(
-                _["mstart_2"].format(config.MUSIC_BOT_NAME),
+                _["start_2"].format(config.MUSIC_BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(out),
             )
         if await is_on_off(config.LOG):
@@ -217,21 +208,21 @@ async def mstart_comm(client, message: Message, _):
             sender_name = message.from_user.first_name
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                f"{message.from_user.mention} has just started Bot.\n\nUSER ID: {sender_id}\nUSER NAME: {sender_name}",
             )
 
 
 @app.on_message(
-    filters.command(get_command("MSTART_COMMAND"))
+    filters.command(get_command("START_COMMAND"))
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
 @LanguageStart
 async def testbot(client, message: Message, _):
-    out = mstart_pannel(_)
+    out = start_pannel(_)
     return await message.reply_text(
-        _["mstart_1"].format(
+        _["start_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
         ),
         reply_markup=InlineKeyboardMarkup(out),
@@ -259,19 +250,19 @@ async def welcome(client, message: Message):
             if member.id == app.id:
                 chat_type = message.chat.type
                 if chat_type != "supergroup":
-                    await message.reply_text(_["mstart_6"])
+                    await message.reply_text(_["start_6"])
                     return await app.leave_chat(message.chat.id)
                 if chat_id in await blacklisted_chats():
                     await message.reply_text(
-                        _["mstart_7"].format(
+                        _["start_7"].format(
                             f"https://t.me/{app.username}?start=sudolist"
                         )
                     )
                     return await app.leave_chat(chat_id)
                 userbot = await get_assistant(message.chat.id)
-                out = mstart_pannel(_)
+                out = start_pannel(_)
                 await message.reply_text(
-                    _["mstart_3"].format(
+                    _["start_3"].format(
                         config.MUSIC_BOT_NAME,
                         userbot.username,
                         userbot.id,
@@ -280,13 +271,13 @@ async def welcome(client, message: Message):
                 )
             if member.id in config.OWNER_ID:
                 return await message.reply_text(
-                    _["mstart_4"].format(
+                    _["start_4"].format(
                         config.MUSIC_BOT_NAME, member.mention
                     )
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    _["mstart_5"].format(
+                    _["start_5"].format(
                         config.MUSIC_BOT_NAME, member.mention
                     )
                 )
